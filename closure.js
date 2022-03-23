@@ -5,6 +5,8 @@ function external() {
         console.log(interVar);
         console.log(exterVar);
     }
-    internal();
+    return internal;
 }
-external();
+const internalFn = external();
+console.log(internalFn);
+internalFn();
